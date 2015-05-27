@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'voter/create'
+
+  get 'voter/show'
+
+  get 'voter/update'
+
   root 'pages#home'
 
   get 'candidates/index'
