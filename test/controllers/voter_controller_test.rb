@@ -1,10 +1,6 @@
 require 'test_helper'
 
 class VoterControllerTest < ActionController::TestCase
-  # test "should get create" do
-  #   get :create
-  #   assert_response :success
-  # end
 
   test "should be able to create" do
     assert_difference("Voter.count") do

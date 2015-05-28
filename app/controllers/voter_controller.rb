@@ -14,7 +14,7 @@ class VoterController < ApplicationController
 
   def update
     voter = Voter.find(params[:id])
-    if voter.update(params.permit(:name, :party))
+    if voter.update?(params)
       render json: Voter.find_by_id(params[:id])
     else
       render json: Voter.errors

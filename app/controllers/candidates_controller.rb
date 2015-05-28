@@ -1,6 +1,6 @@
 class CandidatesController < ApplicationController
   def index
-    render json: Candidate.all.to_json
+    render json: Candidate.all
   end
 
   def show
