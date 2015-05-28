@@ -2,8 +2,8 @@ class VotesController < ApplicationController
   def create
     vote = Vote.new(params.permit(:voter_id, :candidate_id))
     if vote.save
-      #render json: vote
-      redirect_to votes_create_path
+      render json: vote
+      # redirect_to votes_create_path
     else
       render json: vote.errors
     end
