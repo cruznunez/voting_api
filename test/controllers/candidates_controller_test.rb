@@ -5,5 +5,9 @@ class CandidatesControllerTest < ActionController::TestCase
     get :index
     assert_response :success
   end
-
+  
+  test "show" do
+    get :show
+    assert_response :success
+  end
 end
