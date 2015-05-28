@@ -1,5 +1,6 @@
 class Voter < ActiveRecord::Base
   has_many :votes
+  has_one :api_key
   validates :name, presence: true
   validates :party, presence: true
 
